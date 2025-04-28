@@ -1,0 +1,83 @@
+/* Apply Comic Font */
+body {
+    margin: 0;
+    font-family: 'Comic Neue', cursive;
+    background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    color: #333;
+}
+
+/* Header Style */
+header {
+    background: #ff6f61;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+    animation: pop 1.5s ease;
+}
+
+header p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+/* Navigation */
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Sections */
+section {
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: auto;
+    background: rgba(255,255,255,0.8);
+    margin-top: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+    margin-top: 40px;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ff6f61;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #d84339;
+    transform: scale(1.05);
+}
+
+/* Custom Animation */
+@keyframes pop {
+    0% { transform: scale(0.5); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
