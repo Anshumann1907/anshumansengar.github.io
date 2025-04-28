@@ -1,84 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Anshuman Sengar - Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <!-- AOS Animation Library -->
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anshuman Sengar - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header>
+        <div class="container">
+            <h1>Anshuman Sengar</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <!-- Header Section -->
-  <header>
-    <h1>Anshuman Sengar</h1>
-    <p>VLSI Engineer | Embedded Systems Enthusiast | AI Innovator</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>A passionate and highly skilled Electronics and Communication Engineering (ECE) student with a focus on VLSI, Embedded Systems, and AI. Seeking opportunities to contribute knowledge and experience in VLSI and Embedded Systems design, while continuing to grow my technical expertise.</p>
+            <p><strong>Email:</strong> <a href="mailto:sengaranshuman88@gmail.com">sengaranshuman88@gmail.com</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/anshuman-sengar-795123249">Anshuman Sengar</a></p>
+        </div>
+    </section>
 
-  <!-- Hero Section with Video -->
-  <section class="hero">
-    <video autoplay loop muted>
-      <source src="631f962e-1c02-4a82-b9d2-f50069b79116.mp4" type="video/mp4">
-      Your browser does not support HTML5 video.
-    </video>
-    <div class="hero-text" data-aos="fade-up">
-      <h2>Welcome to My Professional Portfolio</h2>
-      <p>Explore my work and skills in VLSI, Embedded Systems, and more!</p>
-    </div>
-  </section>
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>IR-Based Home Automation:</strong> Designed a system to control home appliances using infrared signals.</li>
+                <li><strong>IoT-Based Home Automation:</strong> Developed a remote-control system for home appliances via an IoT platform.</li>
+                <li><strong>Smart Door Lock with ESP32-CAM & Telegram:</strong> Created a smart security solution using ESP32-CAM and Telegram.</li>
+                <li><strong>Industrial Alarm System:</strong> Developed an industrial-grade alarm system with sensors for temperature, gas, and flame detection.</li>
+                <li><strong>8-bit Counter:</strong> Designed an 8-bit counter for digital applications.</li>
+                <li><strong>DTMF Receiver:</strong> Created a DTMF receiver for communication over telephone lines.</li>
+            </ul>
+        </div>
+    </section>
 
-  <!-- About Section -->
-  <section id="about" data-aos="fade-up">
-    <h2>About Me</h2>
-    <p>Hi, I'm Anshuman Sengar, a passionate VLSI Engineer with a strong foundation in Embedded Systems and Artificial Intelligence. Currently pursuing my B.Tech in Electronics and Communication Engineering at ITM Gwalior.</p>
-    <ul>
-      <li>Experience in VLSI design and implementation</li>
-      <li>Skilled in Embedded C, Python, Verilog</li>
-      <li>Hands-on with PCB design and IoT projects</li>
-    </ul>
-  </section>
+    <section id="skills">
+        <div class="container">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li>Embedded Systems</li>
+                <li>VLSI Design</li>
+                <li>PCB Design</li>
+                <li>IoT Development</li>
+                <li>Programming: C, Python, Verilog, Linux</li>
+                <li>Tools: Cadence EDA Tools</li>
+            </ul>
+        </div>
+    </section>
 
-  <!-- Projects Section -->
-  <section id="projects" data-aos="fade-up">
-    <h2>My Projects</h2>
-    <p>Here are some of the projects I have worked on during my academic journey:</p>
-    <ul>
-      <li><strong>IR-Based Home Automation</strong>: A system for controlling home appliances using infrared signals.</li>
-      <li><strong>IoT-Based Home Automation</strong>: Remote control of home appliances through the internet using an IoT platform.</li>
-      <li><strong>Industrial Alarm System</strong>: A real-time alarm system with gas, temperature, and flame detection for industrial applications.</li>
-    </ul>
-  </section>
+    <section id="certifications">
+        <div class="container">
+            <h2>Certifications</h2>
+            <ul>
+                <li>Cadence RTL to GDS Flow (2024)</li>
+                <li>Semiconductor Fabrication, Purdue (2024)</li>
+                <li>VLSI, NIELIT (2023)</li>
+                <li>Arduino, IIT Bombay (2023)</li>
+                <li>PCB Fabrication, ITM Gwalior (2023)</li>
+                <li>Cambridge BEC English (2022)</li>
+            </ul>
+        </div>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact" data-aos="fade-up">
-    <h2>Contact</h2>
-    <p>If you would like to get in touch, feel free to email me or connect with me on LinkedIn.</p>
-    <a href="mailto:sengaranshuman88@gmail.com" class="btn">Email Me</a>
-    <a href="https://www.linkedin.com/in/anshuman-sengar-795123249" class="btn">LinkedIn</a>
-  </section>
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Anshuman Sengar. All rights reserved.</p>
-  </footer>
-
-  <!-- AOS Script -->
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    // Initialize AOS
-    AOS.init({
-      offset: 200,  // Trigger animations when the element is 200px from the viewport
-      duration: 800,  // Animation duration
-      easing: 'ease-in-out',  // Animation easing function
-      once: true,  // Animation happens only once
-    });
-  </script>
-</body>
-</html>
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Anshuman Sengar. All rights reserved.</
