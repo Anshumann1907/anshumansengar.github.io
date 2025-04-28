@@ -1,5 +1,4 @@
-/* Apply Comic Font */
-/* style.css for Anshuman Sengar Professional Portfolio */
+/* style.css for Anshuman Sengar Portfolio */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
@@ -12,35 +11,32 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  color: #ffffff;
-  background: #121212;
+  color: #fff;
+  background: #0a0a0a;
   line-height: 1.6;
 }
 
 header {
-  background: rgba(0, 0, 0, 0.9);
-  padding: 20px 0;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
   text-align: center;
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 header h1 {
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   color: #00bcd4;
-  font-weight: 700;
 }
 
 header p {
-  color: #ccc;
+  color: #bbb;
   margin-top: 5px;
-  font-size: 1rem;
 }
 
 nav {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 nav a {
@@ -49,18 +45,28 @@ nav a {
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s;
-  text-transform: uppercase;
 }
 
 nav a:hover {
   color: #00bcd4;
 }
 
+/* Hero Section */
 .hero {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   overflow: hidden;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Overlay */
+  z-index: 0;
 }
 
 .hero video {
@@ -78,34 +84,29 @@ nav a:hover {
   top: 50%;
   transform: translateY(-50%);
   text-align: center;
-  padding: 0 20px;
+  z-index: 1;
 }
 
 .hero-text h2 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   color: #ffffff;
-  font-weight: 700;
-  animation: fadeIn 2s ease-in-out;
+  animation: fadeIn 2s ease;
 }
 
 .hero-text p {
   margin-top: 10px;
   font-size: 1.2rem;
   color: #ddd;
-  font-weight: 400;
 }
 
 section {
   padding: 60px 20px;
   text-align: center;
-  margin: 0 auto;
-  max-width: 1200px;
 }
 
 section h2 {
   font-size: 2.5rem;
   color: #00bcd4;
-  font-weight: 700;
   margin-bottom: 20px;
 }
 
@@ -116,40 +117,20 @@ section p, section li {
 
 ul {
   list-style-type: none;
-  padding: 0;
 }
 
 ul li {
   margin: 10px 0;
 }
 
-.tech-icons {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin-top: 20px;
-}
-
-.tech-icons img {
-  width: 50px;
-  height: 50px;
-  transition: transform 0.3s;
-}
-
-.tech-icons img:hover {
-  transform: scale(1.1);
-}
-
 .btn {
   display: inline-block;
-  padding: 10px 30px;
+  padding: 10px 25px;
   margin-top: 20px;
   background: #00bcd4;
   color: #fff;
   border-radius: 30px;
   text-decoration: none;
-  font-weight: 600;
-  text-transform: uppercase;
   transition: background 0.3s;
 }
 
@@ -161,15 +142,16 @@ footer {
   padding: 20px;
   background: #111;
   text-align: center;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
+/* Animations */
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
 }
 
-/* Animation on scroll */
+/* AOS scroll animations */
 [data-aos] {
   opacity: 0;
   transition-property: opacity, transform;
@@ -185,6 +167,7 @@ footer {
   transform: translateY(0);
 }
 
+/* Responsive */
 @media (max-width: 768px) {
   nav a {
     display: block;
@@ -192,14 +175,10 @@ footer {
   }
 
   .hero-text h2 {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
   section h2 {
     font-size: 2rem;
-  }
-
-  .tech-icons {
-    flex-direction: column;
   }
 }
