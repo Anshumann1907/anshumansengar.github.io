@@ -1,95 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anshuman Sengar | Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Anshuman Sengar | Embedded & VLSI Engineer</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <!-- AOS Animation CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <h1>Anshuman Sengar</h1>
-        <p>Final-Year ECE Student | VLSI Design Enthusiast | PCB Design Learner</p>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#education">Education</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#certifications">Certifications</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
 
-    <section id="about" data-aos="fade-down">
-        <h2>About Me</h2>
-        <p>Hello! I'm <strong>Anshuman Sengar</strong>, a passionate Electronics and Communication Engineering (ECE) student currently pursuing my B.Tech from ITM Gwalior. My areas of interest include <strong>VLSI Design</strong> and <strong>PCB Development</strong>. I enjoy working on hardware-based projects and continuously upskilling myself through internships, certifications, and hands-on experiments. Currently focusing on backend VLSI (Physical Design) domain, synthesis, STA, and DFT fundamentals.</p>
-    </section>
+<header>
+  <div class="container header-container" data-aos="fade-down">
+    <img src="profile.jpg" alt="Profile Picture" class="profile-img">
+    <div>
+      <h1>Anshuman Sengar</h1>
+      <p>Final-Year ECE Student | Embedded Systems | VLSI Design Enthusiast</p>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </div>
+</header>
 
-    <section id="education" data-aos="zoom-in">
-        <h2>Education</h2>
-        <ul>
-            <li><strong>B.Tech in Electronics and Communication Engineering</strong> (2021–2025)<br>ITM Gwalior</li>
-            <li><strong>Senior Secondary (XII)</strong><br>MP Board</li>
-            <li><strong>Secondary (X)</strong><br>MP Board</li>
-        </ul>
-    </section>
+<section id="about" class="section" data-aos="fade-up">
+  <h2>About Me</h2>
+  <p>Hello! I am <strong>Anshuman Sengar</strong>, currently in my final year of B.Tech (ECE) at ITM Gwalior. I am passionate about <strong>VLSI backend design</strong>, <strong>embedded systems</strong>, and <strong>PCB design</strong>.  
+  I specialize in hands-on hardware development, physical design flows, synthesis, and timing analysis. My journey in electronics has been marked by persistent learning through internships, certifications, and practical project experience.  
+  I am focused on securing a career in the semiconductor/VLSI industry and am continuously building strong fundamentals in chip design methodologies.</p>
+</section>
 
-    <section id="skills" data-aos="fade-right">
-        <h2>Skills</h2>
-        <ul>
-            <li>VLSI Design using Cadence Tools (Virtuoso, Genus, Innovus)</li>
-            <li>Physical Design Fundamentals (Floorplanning, Placement, Routing)</li>
-            <li>Static Timing Analysis (STA)</li>
-            <li>Design for Testability (DFT) - Basics</li>
-            <li>PCB Design and Fabrication</li>
-            <li>Programming Languages: C, Verilog HDL</li>
-            <li>Linux Basics for VLSI</li>
-        </ul>
-    </section>
+<section id="education" class="section" data-aos="fade-up">
+  <h2>Education</h2>
+  <ul>
+    <li><strong>B.Tech in Electronics and Communication Engineering</strong> (2021–2025) – ITM Gwalior</li>
+    <li><strong>Senior Secondary (Class XII)</strong> – MP Board</li>
+    <li><strong>Secondary (Class X)</strong> – MP Board</li>
+  </ul>
+</section>
 
-    <section id="projects" data-aos="fade-left">
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>IR-Based Home Automation</strong> – Controlling devices using IR remote signals.</li>
-            <li><strong>Smart Door Lock using ESP32-CAM</strong> – Telegram-based photo capture and door control.</li>
-            <li><strong>8-bit Counter Design in Verilog</strong> – Synthesized and verified simple counter logic.</li>
-        </ul>
-    </section>
+<section id="skills" class="section" data-aos="fade-right">
+  <h2>Technical Skills</h2>
+  <div class="skills-grid">
+    <div class="skill">VLSI Physical Design</div>
+    <div class="skill">Static Timing Analysis (STA)</div>
+    <div class="skill">Design for Testability (DFT)</div>
+    <div class="skill">Embedded Systems</div>
+    <div class="skill">PCB Design & Fabrication</div>
+    <div class="skill">C Programming</div>
+    <div class="skill">Verilog HDL</div>
+    <div class="skill">Linux (Basics)</div>
+    <div class="skill">Cadence Tools (Virtuoso, Genus, Innovus)</div>
+  </div>
+</section>
 
-    <section id="certifications" data-aos="flip-up">
-        <h2>Certifications</h2>
-        <ul>
-            <li>RTL to GDS Flow (Cadence Design Systems)</li>
-            <li>Semiconductor Fabrication (Purdue University)</li>
-            <li>VLSI Design Basics (NIELIT Noida)</li>
-            <li>PCB Design & Fabrication Workshop (ITM Gwalior)</li>
-            <li>Arduino and IoT Workshop (IIT Bombay)</li>
-        </ul>
-    </section>
+<section id="projects" class="section" data-aos="fade-left">
+  <h2>Projects</h2>
+  <ul>
+    <li><strong>8-bit Synchronous Counter</strong> – Designed and verified an 8-bit counter using Verilog, simulated using Cadence Xcelium.</li>
+    <li><strong>IR-Based Home Automation</strong> – Built an IR remote-controlled automation system for smart switching applications.</li>
+    <li><strong>Smart Door Lock with ESP32-CAM</strong> – Developed a camera-based Telegram-controlled smart door locking system (hardware project).</li>
+    <li><strong>DTMF Receiver Circuit</strong> – Created a mobile-controlled system based on DTMF signals and decoding using MT8870 IC.</li>
+    <li><strong>PCB Design Projects</strong> – Designed and fabricated multiple PCBs using Proteus and fabricated using traditional etching methods.</li>
+  </ul>
+</section>
 
-    <section id="contact" data-aos="zoom-in-up">
-        <h2>Contact Me</h2>
-        <p><strong>Email:</strong> sengaranshuman88@gmail.com</p>
-        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/anshuman-sengar-795123249/" target="_blank">Anshuman Sengar</a></p>
-        <p><strong>GitHub:</strong> <a href="https://github.com/anshuman1907" target="_blank">github.com/anshuman1907</a></p>
+<section id="certifications" class="section" data-aos="flip-up">
+  <h2>Certifications</h2>
+  <ul>
+    <li>RTL to GDS Flow Training – Cadence Design Systems (AICTE Eduskills)</li>
+    <li>Semiconductor Fabrication Course – Purdue University</li>
+    <li>VLSI Design Basics – NIELIT Noida</li>
+    <li>PCB Fabrication Workshop – ITM Gwalior</li>
+    <li>Arduino & Embedded Systems Workshop – IIT Bombay</li>
+  </ul>
+</section>
 
-        
-        <br>
-        <a href="Resume.pdf" download class="btn">Download Resume</a>
-    </section>
+<section id="contact" class="section" data-aos="zoom-in">
+  <h2>Contact Me</h2>
+  <p><strong>Email:</strong> sengaranshuman88@gmail.com</p>
+  <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/anshuman-sengar-795123249/" target="_blank">Anshuman Sengar</a></p>
+  <p><strong>GitHub:</strong> <a href="https://github.com/anshuman1907" target="_blank">github.com/anshuman1907</a></p>
 
-    <footer>
-        <p>© 2025 Anshuman Sengar. All rights reserved.</p>
-    </footer>
+  <br>
+  <a href="Resume.pdf" class="btn" download>📄 Download Resume</a>
+</section>
 
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        duration: 1500,
-        once: true,
-      });
-    </script>
+<footer>
+  <p>© 2025 Anshuman Sengar. All rights reserved.</p>
+</footer>
+
+<!-- AOS Animation Script -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1200,
+    once: true,
+  });
+</script>
+
 </body>
 </html>
