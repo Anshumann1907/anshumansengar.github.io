@@ -3,97 +3,81 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Anshuman Sengar | VLSI Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Anshuman Sengar - Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <!-- AOS Animation Library -->
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-  <header class="hero">
-    <video autoplay muted loop id="bg-video">
-      <source src="https://cdn.pixabay.com/video/2022/11/15/139115-773644628_large.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    <div class="hero-content" data-aos="fade-down">
-      <h1>Anshuman Sengar</h1>
-      <p>ECE | VLSI Design | Backend Enthusiast</p>
-      <a href="#about" class="btn">Explore More</a>
-    </div>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Anshuman Sengar</h1>
+    <p>VLSI Engineer | Embedded Systems Enthusiast | AI Innovator</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <nav class="navbar">
-    <a href="#about">About</a>
-    <a href="#education">Education</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#certifications">Certifications</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <!-- Hero Section with Video -->
+  <section class="hero">
+    <video autoplay loop muted>
+      <source src="your-video.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+    <div class="hero-text" data-aos="fade-up">
+      <h2>Welcome to My Professional Portfolio</h2>
+      <p>Explore my work and skills in VLSI, Embedded Systems, and more!</p>
+    </div>
+  </section>
 
+  <!-- About Section -->
   <section id="about" data-aos="fade-up">
     <h2>About Me</h2>
-    <p>Hello! I'm <strong>Anshuman Sengar</strong>, an aspiring VLSI engineer passionate about chip design and backend physical design flows. Currently completing my B.Tech in ECE from ITM Gwalior. Skilled in Cadence tools, Synthesis, Static Timing Analysis, and DFT basics. Excited to innovate and contribute to the semiconductor world!</p>
-  </section>
-
-  <section id="education" data-aos="fade-up">
-    <h2>Education</h2>
+    <p>Hi, I'm Anshuman Sengar, a passionate VLSI Engineer with a strong foundation in Embedded Systems and Artificial Intelligence. Currently pursuing my B.Tech in Electronics and Communication Engineering at ITM Gwalior.</p>
     <ul>
-      <li><strong>B.Tech (ECE)</strong> - ITM Gwalior (2021-2025)</li>
-      <li><strong>Senior Secondary (XII)</strong> - MP Board</li>
-      <li><strong>Secondary (X)</strong> - MP Board</li>
+      <li>Experience in VLSI design and implementation</li>
+      <li>Skilled in Embedded C, Python, Verilog</li>
+      <li>Hands-on with PCB design and IoT projects</li>
     </ul>
   </section>
 
-  <section id="skills" data-aos="fade-right">
-    <h2>Skills</h2>
+  <!-- Projects Section -->
+  <section id="projects" data-aos="fade-up">
+    <h2>My Projects</h2>
+    <p>Here are some of the projects I have worked on during my academic journey:</p>
     <ul>
-      <li>VLSI Physical Design (Floorplan, Placement, Routing)</li>
-      <li>Cadence EDA Tools (Virtuoso, Innovus, Genus)</li>
-      <li>Static Timing Analysis (STA)</li>
-      <li>Design for Testability (DFT) Fundamentals</li>
-      <li>PCB Design and Fabrication</li>
-      <li>Verilog HDL, C Programming</li>
-      <li>Linux OS Basics for VLSI workflows</li>
+      <li><strong>IR-Based Home Automation</strong>: A system for controlling home appliances using infrared signals.</li>
+      <li><strong>IoT-Based Home Automation</strong>: Remote control of home appliances through the internet using an IoT platform.</li>
+      <li><strong>Industrial Alarm System</strong>: A real-time alarm system with gas, temperature, and flame detection for industrial applications.</li>
     </ul>
   </section>
 
-  <section id="projects" data-aos="fade-left">
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>IR-Based Home Automation</strong> - Control appliances using IR remote.</li>
-      <li><strong>ESP32-CAM Smart Lock</strong> - Door lock control via Telegram Bot and camera.</li>
-      <li><strong>8-bit Counter in Verilog</strong> - Digital counter with synthesis verification.</li>
-    </ul>
-  </section>
-
-  <section id="certifications" data-aos="zoom-in">
-    <h2>Certifications</h2>
-    <ul>
-      <li>Cadence: RTL to GDSII Flow</li>
-      <li>Semiconductor Fabrication - Purdue University</li>
-      <li>VLSI Design Fundamentals - NIELIT Noida</li>
-      <li>PCB Fabrication Workshop - ITM Gwalior</li>
-    </ul>
-  </section>
-
+  <!-- Contact Section -->
   <section id="contact" data-aos="fade-up">
-    <h2>Contact Me</h2>
-    <p><strong>Email:</strong> sengaranshuman88@gmail.com</p>
-    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/anshuman-sengar-795123249/" target="_blank">Profile</a></p>
-    <p><strong>GitHub:</strong> <a href="https://github.com/anshuman1907" target="_blank">@anshuman1907</a></p>
-    <br>
-    <a href="Resume.pdf" download class="btn">Download Resume</a>
+    <h2>Contact</h2>
+    <p>If you would like to get in touch, feel free to email me or connect with me on LinkedIn.</p>
+    <a href="mailto:sengaranshuman88@gmail.com" class="btn">Email Me</a>
+    <a href="https://www.linkedin.com/in/anshuman-sengar-795123249" class="btn">LinkedIn</a>
   </section>
 
+  <!-- Footer -->
   <footer>
-    <p>© 2025 Anshuman Sengar. All Rights Reserved.</p>
+    <p>&copy; 2025 Anshuman Sengar. All rights reserved.</p>
   </footer>
 
+  <!-- AOS Script -->
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
+    // Initialize AOS
     AOS.init({
-      duration: 1200,
-      once: true,
+      offset: 200,  // Trigger animations when the element is 200px from the viewport
+      duration: 800,  // Animation duration
+      easing: 'ease-in-out',  // Animation easing function
+      once: true,  // Animation happens only once
     });
   </script>
 </body>
