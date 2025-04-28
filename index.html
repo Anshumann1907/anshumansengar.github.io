@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Anshuman Sengar - Portfolio</title>
   <link rel="stylesheet" href="style.css">
@@ -24,8 +24,8 @@
 
   <!-- Hero Section with Video -->
   <section class="hero">
-    <video autoplay loop muted playsinline>
-      <source src="631f962e-1c02-4a82-b9d2-f50069b79116.mp4" type="video/mp4">
+    <video autoplay loop muted>
+      <source src="your-video.mp4" type="video/mp4">
       Your browser does not support HTML5 video.
     </video>
     <div class="hero-text" data-aos="fade-up">
@@ -60,7 +60,6 @@
   <section id="contact" data-aos="fade-up">
     <h2>Contact</h2>
     <p>If you would like to get in touch, feel free to email me or connect with me on LinkedIn.</p>
-    <a href="Resume.pdf" class="btn" download>Download Resume</a>
     <a href="mailto:sengaranshuman88@gmail.com" class="btn">Email Me</a>
     <a href="https://www.linkedin.com/in/anshuman-sengar-795123249" class="btn">LinkedIn</a>
   </section>
@@ -73,13 +72,13 @@
   <!-- AOS Script -->
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
+    // Initialize AOS
     AOS.init({
-      offset: 200,
-      duration: 800,
-      easing: 'ease-in-out',
-      once: true,
+      offset: 200,  // Trigger animations when the element is 200px from the viewport
+      duration: 800,  // Animation duration
+      easing: 'ease-in-out',  // Animation easing function
+      once: true,  // Animation happens only once
     });
   </script>
-
 </body>
 </html>
